@@ -18,10 +18,10 @@ pip install requests
 
 Before running the script, update the following variables inside the file:
 
-```base_url = "http://10.10.10.248/documents/"   # Target base URL```
-```file_suffix = "-upload.pdf"                  # File name suffix```
-```start_date = datetime(2020, 1, 1)            # Start date```
-```end_date = datetime(2020, 12, 31)            # End date```
+base_url = "http://192.168.1.1/.../"
+file_suffix = "-upload.pdf"                  
+start_date = datetime(2020, 1, 1)            
+end_date = datetime(2020, 12, 31)           
 
 ```base_url``` → Set the target server and directory.
 
