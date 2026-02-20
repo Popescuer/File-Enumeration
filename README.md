@@ -1,34 +1,38 @@
 # File-Enumeration
 
-PDF Date Scraper
+# PDF Date Fetcher
 
-Simple Python script that iterates over a date range and attempts to download PDF files from a server using a date-based filename pattern.
+A simple Python script that iterates over a date range and attempts to download PDF files from a server using a date-based filename pattern.
 
-Requirements
+## Requirements
 
-Python 3.6+
+- Python 3.6+
+- `requests` library
 
-requests library
+Install the required dependency:
 
-Install dependency:
-
+```bash```
 pip install requests
-Configuration
 
-Before running the script, adjust the following variables:
+## Configuration
 
-base_url = "http://10.10.10.248/documents/"   # Target base URL
-file_suffix = "-upload.pdf"                  # File name suffix
-start_date = datetime(2020, 1, 1)            # Start date
-end_date = datetime(2020, 12, 31)            # End date
+Before running the script, update the following variables inside the file:
 
-base_url → Set the target server and directory.
+```base_url = "http://10.10.10.248/documents/"   # Target base URL```
+```file_suffix = "-upload.pdf"                  # File name suffix```
+```start_date = datetime(2020, 1, 1)            # Start date```
+```end_date = datetime(2020, 12, 31)            # End date```
 
-file_suffix → Modify if the file naming pattern differs.
+```base_url``` → Set the target server and directory.
 
-start_date / end_date → Define the date range to scan.
+```file_suffix``` → Change if the filename pattern is different.
 
-Usage
-python script.py
+```start_date / end_date``` → Define the date range to scan.
 
-Files found (HTTP 200) will be saved in the current directory.
+## Usage
+
+Run the script with:
+
+```python script.py```
+
+All files returning HTTP 200 will be saved in the current directory.
