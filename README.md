@@ -11,7 +11,6 @@ A simple Python script that iterates over a date range and attempts to download 
 
 Install the required dependency:
 
-```bash```
 pip install requests
 
 ## Configuration
